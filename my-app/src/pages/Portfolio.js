@@ -18,10 +18,11 @@ const projects = [
     title: "Note Taker",
     description:
       "Simple app used for taking notes for later use.",
-    image: socialMedia,
+    image: "./picture/Screenshot 2024-04-24 at 9.59.34 PM.png",
+    
     github: "https://github.com/phoenixpyra7/social-network-api-using-nosql",
     deployed:
-      "https://www.awesomescreenshot.com/video/25864816?key=0af7602b2f0c740bcbdb75212ab9ea2b",
+      "https://www.awesomescreenshot.com/video/25864816?key=0af7602b2f0c740bcbdb75212ab9ea2b"
   },
 ];
 
