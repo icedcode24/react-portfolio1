@@ -6,7 +6,7 @@ created a profeesional web portfolio using html and css to display my informatio
 ## Links
 https://github.com/icedcode24/react-portfolio1
 
-jazzy-panda-7475b6.netlify.app
+https://jazzy-panda-7475b6.netlify.app
 
 
 ## Usage
