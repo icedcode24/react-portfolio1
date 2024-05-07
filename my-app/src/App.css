@@ -1,39 +1,218 @@
-.App {
+/* I had so much fun getting to utilize CSS again, I did not try an compress the classes with this project. */
+
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background-color: #585757;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec0505;
+}
+
+/* this is for the nav bar text */
+.nav-item {
+  font-weight: 600;
+}
+
+/* these are the heading styles */
+h1 {
+  font-size: 5rem;
+  font-feature-settings: "abvf";
+  font-family: "Cormorant", serif;
+  text-shadow: 4px 4px 8px #000000;
+  color: hsla(185, 92%, 64%, 0.581);
+}
+
+h2 {
+  font-size: 3rem;
+  font-feature-settings: "abvf";
+  font-family: "Cormorant", serif;
+  text-shadow: 4px 4px 8px #000000;
+  color: hsla(185, 92%, 64%, 0.766);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-feature-settings: "abvf";
+  /* font-family: 'Cormorant', serif; */
+  text-shadow: 4px 4px 8px #000000;
+  /* color: hsla(275, 100%, 58%, 0.942); */
+  color: rgb(255, 200, 0);
+}
+
+h5 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 4px 4px 8px #000000;
+  /* color: rgb(80, 214, 111); */
+  color: rgb(32, 140, 198);
+}
+
+
+
+.infoCard {
+  background-color: rgba(37, 32, 43, 0.556);
+  border-radius: 8px;
+  text-align: center;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+}
+
+.projectLinks {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+/* unvisited link, using same color as visited to avoid refresh issues */
+a:link {
+  /* color: rgb(255, 200, 0); */
+  color: hsla(275, 100%, 58%, 0.942);
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+/* visited link,, using same color as unvisited to avoid refresh issues */
+a:visited {
+  /* color: rgb(255, 200, 0); */
+  color: hsla(275, 100%, 58%, 0.942);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/*  this is for the resume page */
+.resume-text {
+  margin-top: 13vh;
+  margin-inline: auto;
+  width: 40vw;
+  font-size: 1.5rem;
+  text-align: center;
+  font-feature-settings: "abvf";
+  text-shadow: 6px 6px 10px #000000;
+  background-color: rgba(37, 32, 43, 0.556);
+  border-radius: 8px;
+  color: rgb(32, 140, 198);
+}
+/* this is for the about me page */
+.avatar {
+  height: 240px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: #000000 4px 4px 8px;
+}
+
+.About {
+  background-color: rgba(37, 32, 43, 0.556);
+  border-radius: 8px;
+  margin-inline: 13vw;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+  text-shadow: 4px 4px 8px #000000;
+  color: rgb(76, 170, 98);
+}
+/* this is for the contact page */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 10vw;
+}
+
+form input {
+  width: 25%;
+  margin-inline: auto;
+  background-color: #33457754;
+  color: rgb(255, 253, 253);
+}
+
+form input::placeholder {
+  color: rgb(216, 216, 216);
+}
+
+form button {
+  margin-inline: auto;
+  width: 10%;
+  border-radius: 8px;
+  background-color: rgba(170, 101, 240, 0.77);
+  /* text-decoration: underline; */
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message-box {
+  display: flex;
+  height: 20vh;
+  margin-inline: auto;
+  margin-block: 5vh;
+  width: 900px;
+  text-align: center;
+  background-color: #33457754;
+}
+
+/* this is for the footer */
+footer {
+  /* font-family: cursive; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: rgba(122, 159, 245, 0.799);
+  font-weight: bold;
+  text-shadow: 2px 2px rgb(5, 0, 1);
+
+  justify-content: center;
+  background-color: rgba(37, 32, 43, 0.556);
+  border-radius: 8px;
+}
+
+
+/* Misc */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+main {
+  /* height: 70vh */
+  height: 100vh;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #585757;
 }

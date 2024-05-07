@@ -1,5 +1,5 @@
 import "bootswatch/dist/quartz/bootstrap.min.css";
-import "./App.css";
+import "./pages/App.css";
 import { Outlet, useLocation } from "react-router-dom";
 import Nav from "./components/NavTabs";
 import Footer from "./components/footer";
