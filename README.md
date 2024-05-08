@@ -1,4 +1,4 @@
-# react-portfolio24
+# react-portfolio1
 
 ## Description
 created a profeesional web portfolio using html and css to display my information to better my chances of landing a job.
